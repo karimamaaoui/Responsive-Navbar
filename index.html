@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Responsive Navbar</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+        <a href="" class="logo">READING</a>
+        <div class="nav-links mobile-menu">
+            <ul>
+                <li class="active"><a href="">Home</a></li>
+
+                <li><a href="">Reading</a></li>
+                <li><a href="">Support</a></li>
+                <li><a href="">Infos</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <img src="menu-btn.png" alt="" class="hamburger">
+    </nav>
+    <header>
+
+    </header>
+  </body>
+  <script>
+    const menuHamburger = document.querySelector(".hamburger")
+        const navLinks = document.querySelector(".nav-links")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+  </script>
+</html>
